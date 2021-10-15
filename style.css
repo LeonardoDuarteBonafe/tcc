@@ -1,0 +1,1961 @@
+@font-face{
+    src: url(Fonts/BebasNeue-Bold.otf);
+    font-family: bebasBold;
+}
+
+@font-face{
+    src: url(Fonts/BebasNeue-Regular.ttf);
+    font-family: bebasRegular;
+}
+
+@font-face{
+    src: url(Fonts/Montserrat-Black.otf);
+    font-family: montBlack;
+}
+
+@font-face{
+    src: url(Fonts/Montserrat-Bold.otf);
+    font-family: montBold;
+}
+
+@font-face{
+    src: url(Fonts/Montserrat-Regular.ttf);
+    font-family: montRegular;
+}
+
+body{
+    max-width: 1366px !important;
+    margin: 0 auto !important;
+    z-index: 5 !important;
+    font-family: montRegular !important;
+    letter-spacing: 3px;
+    font-size: 1.4rem !important;
+    overflow-x: hidden !important;
+}
+
+h5{
+    font-size: 1.8rem !important;
+}
+
+.carousel{
+    position: relative;
+}
+
+.navbar{
+    display: none !important;
+}
+
+.navbar .navbar-collapse{
+    height: 50% !important;
+    max-height:300px !important;
+    overflow:auto;
+}
+
+.navbar .navbar-brand{
+    width: 100px;
+    margin-left: 5%;
+}
+.navbar .navbar-brand img{
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-item{
+    padding-left: 5%;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: black !important;
+}
+
+.navbar .navbar-nav .nav-item .pdf a{
+    color: black !important;
+}
+
+.dropdown{
+    margin-bottom: 0 !important;
+}
+
+.dropdown-menu{
+    background-color: transparent !important;
+    border-style: none !important;
+    padding: 0 !important;
+}
+
+.dropdown-menu .materials{
+    border-style: none !important;
+}
+
+.carousel .translate{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: absolute;
+    top: 0px !important;
+    right: 50px !important;
+    z-index: 10;
+}
+
+.carousel .translate a{
+    width: 30px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.carousel .translate a img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.carousel .menu-bar{
+    width: 340px;
+    padding: 0px 0px 0 0!important;
+    text-align: center;
+    position: absolute;
+    top: 0 !important;
+    bottom: 0px !important;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 10;
+}
+
+.carousel .menu-bar img{
+    width: 200px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.carousel .menu-bar div{
+    margin: 50px 0px 0 0!important;
+    font-size: 1.2rem;
+}
+
+.carousel .menu-bar .btn-group{
+    padding: 0 !important;
+}
+
+.carousel .menu-bar .btn-secondary:hover{
+    text-decoration: underline;
+}
+
+.carousel .menu-bar .btn-secondary:focus{
+    background-color: transparent!important;
+    box-shadow: none !important;
+}
+
+.carousel .menu-bar .btn-group button{
+    border-radius: 0 !important;
+    color: black !important;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 0;
+}
+
+.carousel .menu-bar a{
+    color: black;
+}
+
+.carousel .menu-bar .dropdown-menu{
+    margin-top: -100px !important;
+    padding: 0 !important;
+    width: 500px;
+    height: 230px;
+    z-index: 2 !important;
+    background-color: transparent !important;
+    cursor:  !important;
+}
+
+.carousel .menu-bar .dropdown-menu .colors-selector{
+    margin: 0 !important;
+    height: 260px;
+    cursor: default !important;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: -70px !important;
+}
+
+.carousel .menu-bar .dropdown-menu .colors-selector .col-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 10px 15px 0 20px!important;
+    padding: 0 !important;
+}
+
+.carousel .menu-bar .dropdown-menu .colors-selector .col-3 img{
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0;
+}
+
+.carousel .menu-bar .dropdown-menu .colors-selector .col-3 p{
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: montBlack;
+    margin: 0;
+    text-align: center;
+}
+
+.carousel .menu-bar .dropdown-menu .materials{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: default!important;
+    margin-top: -40px !important;
+    padding: 10px 40px !important;
+}
+
+.carousel .menu-bar .dropdown-menu .materials div{
+    margin: 0px !important;
+    padding: 10px;
+}
+
+.carousel .menu-bar .dropdown-menu .materials img{
+    width: 100%;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.carousel .menu-bar .dropdown-menu .materials h5{
+    font-size: 0.8rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: montBlack;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.carousel .menu-bar .download .dropdown-menu{
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    border-radius: 0 !important;
+    width: 450px !important;
+    height: 200px;
+    margin: 0 !important;
+    margin-top: -140px !important;
+    text-align: center;
+}
+
+.carousel .menu-bar .download .dropdown-menu div{
+    margin: 10px !important;
+}
+
+.carousel .menu-bar .download .dropdown-menu div a{
+    font-family: montRegular;
+}
+
+.fixed-navbar{
+    position: fixed !important;
+    width: 100% !important;
+    margin: 0 !important;
+    z-index: 10;
+}
+
+.fixed-menu-bar{
+    position: fixed !important;
+    height: 240px;
+}
+
+.fixed-menu-bar .logo img{
+    margin-top: 0px;
+}
+
+.fixed-menu-bar .info{
+    display: none;
+}
+
+.carousel .carousel-indicators{
+    margin-bottom: 70px !important;
+    width: 800px;
+    z-index: 2;
+}
+
+.carousel .carousel-indicators li{
+    width: 25px !important;
+    height: 25px !important;
+    background-image: url(Images/Index/Carousel-Top/carousel-indicator.webp) !important;
+    background-size: cover;
+    background-color: black !important;
+    z-index: 3;
+}
+
+.carousel .carousel-item .carousel-caption{
+    width: 100% !important;
+    left: 0 !important;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px !important;
+    padding-right: 30px !important;
+    z-index: 0;
+}
+
+.carousel .carousel-item .carousel-caption img{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+
+.carousel .carousel-item .carousel-caption h1{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.mudapage{
+    width: 100px;
+}
+
+.product img{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.activeMaterial{
+    font-family: montBlack;
+}
+
+.activeColor{
+    font-family: montBlack;
+}
+
+.activeColor img{
+    transform: scale(1.0) !important;
+}
+
+.page{
+    width: 100% !important;
+}
+
+.page img{
+    width: 100% !important;
+}
+
+.page .page-background{
+    max-width: 1366px !important;
+    width: 100% !important;
+    height: 100vh;
+    position: fixed;
+    z-index: -1 !important;
+    top: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.page .page-background img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.row{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.title img{
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 30px;
+}
+
+.page .company{
+    text-align: right;
+    width: 90%;
+    margin-right: 10%;
+    margin-bottom: 60px !important;
+}
+
+.page .company div{
+    padding: 0;
+}
+
+.page .company .text{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.page .company .text p{
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.page .company .information{
+    margin-top: 80px !important;
+    width: 90%;
+    margin-left: 10% !important;
+}
+
+.page .company .information .images img{
+    padding: 0px 10px 20px 10px;
+}
+
+.company .images{
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 80% !important;
+}
+
+.company .images img{
+    width: 100% !important;
+    height: 100%;
+}
+
+.company .images .big{
+    height: 370px;
+}
+
+.page .company .product-list h6{
+    font-family: montBlack;
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+}
+
+.page .company .product-list .side-image img{
+    width: 100% !important;
+}
+
+.page .company ul li{
+    list-style: none;
+    margin: 30px 0;
+
+}
+
+.colors{
+    margin-bottom: 80px !important;
+}
+
+.colors .painel {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.colors .painel img:nth-child(1){
+    height: 500px !important;
+}
+
+.colors .painel img{
+    width: 70% !important;
+    margin: 0 15% !important;
+    display: flex;
+}
+
+.page .colors .colors-selector .row{
+    width: 70% !important;
+    margin: 0 auto !important;
+    justify-content: center;
+    text-align: center;
+}
+
+.page .colors .colors-selector .row .painelcor{
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.page .colors .colors-selector .row .painelcor img{
+    padding: 10px;
+}
+
+.page .colors .colors-selector .row .painelcor p{
+    margin-top: 10px;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.page .materials{
+    width: 80%;
+    margin: 0 auto !important;
+    margin-bottom: 80px !important;
+}
+
+.type-material,
+#video{
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.page .type-material h5,
+.page .materials #video h5{
+    margin-top: 10px;
+    text-align: right;
+}
+
+.page .quartzcollection .row,
+#video
+{
+    width: 80% !important;
+    margin: 0 auto !important;
+    margin-bottom: 100px !important;
+    height: 450px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.page .quartzcollection .row img,
+#video img
+{
+    height: 400px;
+    object-fit: cover;
+}
+
+.inspirations{
+    margin-bottom: 100px !important;
+}
+
+.formulario{
+    position: relative;
+}
+
+.formulario img{
+    width: 100%;
+}
+
+.formulario .info {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    align-items: center !important;
+}
+
+.formulario .info h2{
+    font-family: montBlack;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.formulario .info input{
+    width: 80%;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: thin;
+    border-color: black;
+}
+
+.formulario .info textarea{
+    width: 80%;
+    background-color: transparent;
+    border-width: thin;
+    border-color: black;
+    margin-bottom: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.formulario .info .form-text{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.formulario .info input::placeholder{
+    color: black;
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+.formulario .info textarea::placeholder{
+    color: black;
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+.formulario button{
+    background-color: transparent;
+    border: 0;
+    padding: 5px 30px;
+    width: 150px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.formulario .info .contact h5{
+    font-family: montBlack;
+    font-size: 1.2rem !important;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.formulario .info .contact p{
+    letter-spacing: 0;
+    font-size: 1rem;
+}
+
+.formulario .whatsapp-logo{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.formulario .whatsapp-logo img{
+    display: block !important;
+    width: 20px !important;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.footer{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #EFEFEF;
+    padding: 50px 50px 30px 50px !important;
+}
+
+.footer .logo img{
+    width: 70% !important;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.footer p{
+    font-size: 0.8rem;
+    letter-spacing: 0;
+    width: 75%;
+}
+
+.footer .text{
+    font-size: 0.8rem !important;
+    letter-spacing: 0
+}
+
+.footer .products{
+    text-align: right;
+}
+
+.footer .products p{
+    font-family: montBlack;
+    font-size: 1.3rem !important;
+    width: 100%;
+}
+
+.footer ul li{
+    list-style: none;
+    font-weight: normal;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    margin-bottom: 0 !important;
+}
+
+.nossos-produtos{
+    justify-content: center;
+}
+
+.nossos-produtos .block{
+    width: 100%;
+    z-index: -10;
+    margin-top: -50px;
+    margin-bottom: 100px !important;
+    color: transparent;
+}
+
+.nossos-produtos .menu{
+    margin-top: 20px !important;
+    width: 100%;
+    background-color: white;
+}
+.nossos-produtos .menu img{
+    width: 200px;
+}
+
+.nossos-produtos .materials,
+.nossos-produtos .colors
+{
+    margin-bottom: 50px !important;
+}
+
+.nossos-produtos .materials div{
+    margin-bottom: 10px;
+    font-size: 1.0rem !important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.nossos-produtos .materials div p{
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1.4rem !important;
+}
+
+.nossos-produtos .colors div{
+    font-size: 1.4rem !important;
+    cursor: pointer;
+}
+
+.nossos-produtos .colors .color-menu{
+    padding: 1.5px !important;
+    margin-right: 5px;
+}
+
+.nossos-produtos .colors img{
+    width: 100%;
+    transform: scale(0.7);
+}
+
+.nossos-produtos .products img{
+    width: 100%;
+}
+
+.nossos-produtos .products{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: montRegular;
+    width: 100%;
+}
+
+.nossos-produtos .products div{
+    cursor: pointer;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 15px !important;
+    margin-bottom: 20px !important;
+}
+
+.nossos-produtos .products div p{
+    margin: 0;
+}
+
+.page-product{
+    width: 80%;
+    margin: 0 auto !important;
+}
+
+.page-product img{
+    width: 100%;
+}
+
+.page-product .menu{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+}
+
+.page-product .menu img{
+    width: 200px;
+}
+
+.page-product .panel div{
+    display: flex;
+}
+
+.page-product .panel{
+    margin-bottom: 50px;
+}
+
+.pageproduto-imagens{
+    width: 100%;
+    margin-bottom: 40px !important;
+}
+
+.pageproduto-imagens div{
+    max-width: 220px;
+    height: 175px;
+    width: 100%;
+}
+
+.pageproduto-imagens div img{
+    height: 100%;
+    width: 100%;
+}
+
+.pageprodutovideo img{
+    cursor: pointer;
+}
+
+.video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0,0,0,0.95);
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.video.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.video video{
+    position: relative;
+    max-width: 900px;
+    outline: none;
+    width: 90% !important; 
+}
+
+.video .close{
+    top: 30px;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+    max-width: 32px;
+}
+
+.producao{
+    display: flex;
+    margin-top: 100px;
+    font-size: 7rem;
+    flex-direction: column;
+}
+
+.producao a{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.producao img{
+    width: 300px;
+}
+
+.video-page{
+    margin-bottom: 30px !important;
+}
+
+.video-page .menu{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.video-page .menu img{
+    width: 200px;
+}
+
+.playvideo{
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.videos img{
+    width: 100% !important;
+}
+
+.videos p{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: montRegular;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@media only screen and (max-width: 991px){
+
+    body{
+        font-size: 1rem !important;
+    }
+
+    .menu-bar{
+        display: none !important;
+    }
+
+    .navbar{
+        display: flex !important;
+    }
+
+    .translate{
+        display: none !important;
+    }
+
+    .translate-navbar{
+        padding-left: 40px;
+    }
+
+    .translate-navbar a{
+        width: 50px !important;
+        height: 20px !important;
+        margin-right: 10px;
+    }
+
+    .translate-navbar a img{
+        width: 40px;
+        cursor: pointer;
+        padding: 0 !important;
+    }
+
+    .carousel .carousel-indicators{
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+        margin-bottom: 0px !important;
+        z-index: 1;
+    }
+
+    .carousel .carousel-indicators li{
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .carousel .carousel-item .carousel-caption{
+        width: 100% !important;
+        left: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        justify-content: center;
+        margin-bottom: 5px !important;
+        z-index: 0;
+    }
+
+    .carousel .carousel-item .carousel-caption img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .carousel .carousel-item .carousel-caption h1{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .title{
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    .title h5{
+        font-size: 20px !important;
+    }
+
+    .title img{
+        width: 20px !important;
+        height: 20px !important;
+        margin-right: 15px;
+    }
+
+    .page .company .title{
+        margin-left: 5%;
+    }
+
+    .page .company{
+        text-align: center !important;
+        margin-bottom: 40px !important;
+    }
+
+    .page .company div{
+        padding: 0;
+    }
+
+    .page .company .text{
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .page .company .text p{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .page .company .information{
+        margin-top: 40px !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .page .company .information .images{
+        margin-left: 5% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .page .company .information .images img{
+        padding: 0px 5px 10px 5px;
+    }
+    .company .images .big{
+        height: 70% !important;
+    }
+
+    .page .company .product-list h6{
+        font-size: 1.3rem;
+        margin-left: 10%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .page .company .product-list .side-image img{
+        width: 90% !important;
+        margin-left: 10%;
+    }
+
+    .page .company ul li{
+        margin: 15px 0;
+    }
+
+    .colors{
+        margin-bottom: 30px !important;
+    }
+
+    .colors .painel {
+        margin-bottom: 30px;
+        padding: 0 !important;
+    }
+
+    .colors .painel img:nth-child(1){
+        height: 150px !important;
+    }
+
+    .page .colors .colors-selector .row{
+        width: 90% !important;
+        margin: 0 auto !important;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .page .colors .colors-selector .row .painelcor{
+        cursor: pointer;
+        padding: 0 !important;
+        margin: 2.5px !important;
+        margin-bottom: 5px !important;;
+    }
+
+    .page .colors .colors-selector .row .painelcor img{
+        width: 100% !important;
+        padding: 3px !important;
+    }
+
+    .page .colors .colors-selector .row .painelcor p{
+        margin-top: 5px !important;
+        font-size: 0.4rem;
+        letter-spacing: 0;
+        margin-bottom: 2.5px !important;
+    }
+
+    .page .materials{
+        margin-bottom: 30px !important;
+    }
+
+    .page .type-material h5,
+    .page .materials #video h5{
+        font-size: 1.1rem !important;
+    }
+
+    .page .quartzcollection .row,
+    #video{
+        width: 80% !important;
+        margin-bottom: 40px !important;
+        height: 170px;
+        text-align: right;
+    }
+
+    .page .quartzcollection .row img,
+    #video img{
+        height: 120px;
+    }
+
+    .page .quartzcollection .title{
+        display: flex;
+        align-items: center;
+        padding: 0 50px 0 25px;
+        text-align: center;
+    }
+
+    .page .quartzcollection .title img{
+    }
+
+    .inspirations{
+        margin-bottom: 50px !important;
+    }
+
+    .formulario{
+        position: static;
+    }
+
+    .formulario img{
+        display: none;
+    }
+
+    .formulario .info {
+        position: static;
+    }
+
+    .formulario .info h2{
+        font-size: 1.2rem !important;
+    }
+
+    .formulario .info input{
+        width: 90%;
+    }
+
+    .formulario .info textarea{
+        width: 90%;
+
+    }
+
+    .formulario .info input::placeholder{
+        font-size: 1.0rem;
+    }
+
+    .formulario .info textarea::placeholder{
+        font-size: 1.0rem;
+    }
+
+    .formulario button{
+        margin-bottom: 30px;
+    }
+
+    .formulario .info .contact{
+        margin-bottom: 20px;
+    }
+
+    .formulario .info .contact h5{
+        padding-left: 30px;
+        font-size: 1.0rem !important;
+    }
+
+    .formulario .info .contact p{
+        letter-spacing: 0;
+        font-size: 0.7rem;
+        padding-left: 30px;
+    }
+
+    .footer{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: #EFEFEF;
+        padding: 50px 50px 30px 50px !important;
+    }
+
+    .footer .logo img{
+        margin: 20px 15% !important;
+    }
+
+    .footer p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer .products{
+        text-align: right;
+    }
+
+    .footer .products p{
+        margin-bottom: 10px;
+    }
+
+    .footer ul{
+        padding: 0 !important;
+    }
+
+    .footer ul li{
+        text-align: center;
+    }
+
+    .nossos-produtos{
+        margin-bottom: 20px !important;
+    }
+
+    .nossos-produtos .block{
+        margin-bottom: 0px !important;
+        color: transparent;
+    }
+
+    .nossos-produtos .menu div{
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .nossos-produtos .colors .color-menu{
+        padding: 1.5px !important;
+        margin-right: 5px;
+    }
+
+    .nossos-produtos .products div{
+        cursor: pointer;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        padding: 0 15px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .page-product .menu{
+        flex-direction: column !important;
+    }
+
+    .page-product .panel{
+        margin-bottom: 20px;
+    }
+
+    .pageproduto-imagens div{
+        max-width: 100px;
+        max-height: 80px;
+        padding: 2.5px 5px;
+    }
+
+    .video-page .menu{
+        flex-direction: column;
+    }
+
+    .video-page .playvideo{
+        padding: 0 15px !important;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 575px){
+
+    .carousel .carousel-indicators li{
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .carousel .carousel-item .carousel-caption{
+        margin-bottom: 5px !important;
+    }
+
+    .carousel .carousel-item .carousel-caption img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .carousel .carousel-item .carousel-caption h1{
+        font-size: 20px;
+    }
+
+    .page .company .information{
+        margin-top: 50px !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .page .company .information .images img{
+        padding: 0px 10px 20px 10px;
+    }
+
+    .page .company .product-list .side-image img{
+        width: 80% !important;
+        margin-left: 15%;
+    }
+
+    .colors .painel img:nth-child(1){
+        height: 200px !important;
+    }
+
+    .page .colors .colors-selector .row .painelcor img{
+        padding: 5px !important;
+    }
+
+    .page .colors .colors-selector .row .painelcor p{
+        font-size: 0.7rem;
+    }
+
+    .page .materials{
+        margin-bottom: 30px !important;
+    }
+
+    .page .type-material h5,
+    .page .materials #video h5{
+        font-size: 1.2rem !important;
+    }
+
+    .page .quartzcollection .row,
+    #video{
+        width: 80% !important;
+        margin-bottom: 40px !important;
+        height: 230px;
+        text-align: right;
+    }
+
+    .page .quartzcollection .row img,
+    #video img{
+        height: 190px;
+    }
+
+    .page .quartzcollection .title{
+        padding: 0 50px 0 50px;
+        text-align: left;
+    }
+
+    .inspirations{
+        margin-bottom: 50px !important;
+    }
+
+    .formulario{
+        position: static;
+    }
+
+    .formulario img{
+        display: none;
+    }
+
+    .formulario .info {
+        position: static;
+    }
+
+    .formulario .info h2{
+        font-size: 1.2rem !important;
+    }
+
+    .formulario .info input{
+        width: 90%;
+    }
+
+    .formulario .info textarea{
+        width: 90%;
+    }
+
+    .formulario .info input::placeholder{
+        font-size: 1.0rem;
+    }
+
+    .formulario .info textarea::placeholder{
+        font-size: 1.0rem;
+    }
+
+    .formulario button{
+        margin-bottom: 30px;
+    }
+
+    .formulario .info .contact{
+        margin-bottom: 20px;
+    }
+
+    .formulario .info .contact h5{
+        padding-left: 30px;
+        font-size: 1.0rem !important;
+    }
+
+    .formulario .info .contact p{
+        letter-spacing: 0;
+        font-size: 0.7rem;
+        padding-left: 30px;
+    }
+
+    .footer{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: #EFEFEF;
+        padding: 50px 50px 30px 50px !important;
+    }
+
+    .footer .logo img{
+        margin: 20px 15% !important;
+    }
+
+    .footer p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer .products{
+        text-align: right;
+    }
+
+    .footer .products p{
+        margin-bottom: 10px;
+    }
+
+    .footer ul{
+        padding: 0 !important;
+    }
+
+    .footer ul li{
+        text-align: center;
+    }
+
+    .nossos-produtos .block{
+        margin-bottom: 30px !important;
+        color: transparent;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 840px){
+
+    .page .colors .colors-selector .row .painelcor p{
+        font-size: 0.75rem !important;
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 991px){
+    .carousel .carousel-indicators{
+        justify-content: flex-start;
+        padding-left: 5% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .carousel .carousel-indicators li{
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .carousel .carousel-item .carousel-caption{
+        justify-content: flex-end;
+        padding-right: 5% !important;
+    }
+
+    .carousel .carousel-item .carousel-caption img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .carousel .carousel-item .carousel-caption h1{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .page .company .information{
+        margin-top: 60px !important;
+    }
+
+    .page .company .information .images{
+        padding: 0 70px !important;
+    }
+
+    .page .company .information .images img{
+        padding: 0px 10px 20px 10px;
+    }
+
+    .page .company .product-list .side-image img{
+        width: 60% !important;
+        margin-left: 25%;
+    }
+
+    .page .colors .colors-selector .row{
+        width: 75% !important;
+    }
+
+    .colors .painel img:nth-child(1){
+        height: 250px !important;
+    }
+
+    .page .colors .colors-selector .row .painelcor{
+        margin: 5px 6px;
+        padding: 0 !important;
+    }
+
+    .page .colors .colors-selector .row .painelcor img{
+        padding: 8px !important;
+    }
+
+    .page .colors .colors-selector .row .painelcor p{
+        margin-top: 10px !important;
+        font-size: 0.9rem;
+    }
+
+    .page .quartzcollection .title{
+        padding: 0 70px 0 70px;
+        text-align: left;
+    }
+
+    .page .quartzcollection .row,
+    #video{
+        margin-bottom: 30px !important;
+        height: 250px;
+        text-align: right;
+    }
+
+    .page .quartzcollection .row img,
+    #video img{
+        height: 200px;
+    }
+
+    .formulario .info .contact h5{
+        font-size: 1.2rem !important;
+    }
+
+    .formulario .info .contact p{
+        font-size: 1rem;
+    }
+
+    .footer{
+        padding: 50px 100px 30px 100px !important;
+    }
+
+    .footer .logo img{
+        width: 50% !important;
+        margin: 30px 25% !important;
+    }
+
+    .nossos-produtos .block{
+        margin-bottom: 50px !important;
+        color: transparent;
+    }
+
+    .page-product .menu{
+        flex-direction: row;
+    }
+
+    .pageproduto-imagens div{
+        max-width: 150px;
+        max-height: 120px;
+        padding: 5px 10px;
+    }
+
+    .video-page .playvideo{
+        padding: 0 !important;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .carousel .carousel-indicators li{
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .carousel .carousel-item .carousel-caption img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .carousel .carousel-item .carousel-caption h1{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .page .company .title{
+        margin-left: 0%;
+    }
+
+    .page .company{
+        text-align: right !important;
+        margin-bottom: 40px !important;
+    }
+
+    .page .company .text p{
+        text-align: right;
+    }
+
+    .page .company .information{
+        margin-top: 40px !important;
+        margin-left: 0 !important;
+    }
+
+    .page .company .information .images{
+        padding: 30px 0px 0 30px !important;
+        margin-left: 0% !important;
+    }
+
+    .page .company .information .images img{
+        padding: 0px 5px 10px 5px;
+    }
+
+    .page .company .product-list .side-image img{
+        width: 100% !important;
+        margin-left: 0%;
+    }
+
+    .colors .painel img:nth-child(1){
+        height: 320px !important;
+    }
+
+    .page .colors .colors-selector .row{
+        width: 80% !important;
+    }
+
+    .page .colors .colors-selector .row .painelcor img{
+    }
+
+    .page .colors .colors-selector .row .painelcor p{
+        font-size: 1.2rem;
+    }
+
+    .page .type-material h5,
+    .page .materials #video h5{
+        font-size: 1.2rem !important;
+    }
+
+    .page .quartzcollection .row,
+    #video{
+        width: 80% !important;
+        height: 290px;
+    }
+
+    .page .quartzcollection .row img,
+    #video img{
+        height: 250px;
+    }
+
+    .page .quartzcollection .title{
+        align-items: flex-start;
+        padding: 0;
+        text-align: start;
+    }
+
+    .inspirations{
+        margin-bottom: 50px !important;
+    }
+
+    .formulario{
+        position: relative;
+    }
+
+    .formulario img{
+        display: block;
+    }
+
+    .formulario .info {
+        position: absolute;
+        width: 90% !important;
+        left: 5% !important;
+        top:  3% !important;
+    }
+
+    .formulario .info h2{
+        margin-bottom: 5px
+    }
+
+    .formulario .info input{
+        height: 90%;
+        width: 90%;
+        margin: 0px 0 5px 0;
+    }
+
+    .formulario .info textarea{
+        height: 90%;
+        margin: 0px 0 5px 0;
+    }
+
+    .formulario .info input::placeholder{
+        font-size: 0.9rem;
+    }
+
+    .formulario .info textarea::placeholder{
+        font-size: 0.9rem;
+    }
+
+    .formulario button{
+        margin-bottom: 10px;
+    }
+
+    .formulario .info .contact h5{
+        font-size: 1.2rem !important;
+    }
+
+    .formulario .info .contact p{
+        font-size: 0.9rem;
+    }
+
+    .footer{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: #EFEFEF;
+        padding: 50px 50px 30px 50px !important;
+    }
+
+    .footer .logo img{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .footer p{
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer .products p{
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    .footer ul li{
+        text-align: right;
+    }
+
+
+    .nossos-produtos .menu div{
+        flex-direction: row !important;
+    }
+
+    .page-product .menu{
+        flex-direction: row !important;
+    }
+
+    .video-page .menu{
+        flex-direction: row !important;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 991px){
+
+    .page .company .information{
+        margin-top: 40px !important;
+        margin-left: 0 !important;
+    }
+
+    .page .company .information .images{
+        padding: 0px 0px 0 40px !important;
+        margin-left: 0% !important;
+    }
+
+    .formulario .info {
+        top:  10% !important;
+    }
+
+    .formulario .info h2{
+        margin-bottom: 10px
+    }
+
+    .formulario .info input{
+        height: 100%;
+        margin: 0px 0 5px 0;
+    }
+
+    .formulario .info textarea{
+        height: 100%;
+        margin: 0px 0 5px 0;
+    }
+
+    .formulario .info input::placeholder{
+        font-size: 1rem;
+    }
+
+    .formulario .info textarea::placeholder{
+        font-size: 1rem;
+    }
+
+    .formulario .info .contact p{
+        font-size: 1.0rem !important;
+    }
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 991px){
+
+    .page .company .information .images{
+        padding: 0px 0px 0 70px !important;
+    }
+
+    .formulario .info {
+        top:  10% !important;
+    }
+
+    .formulario .info h2{
+        margin-bottom: 10px
+    }
+
+    .formulario .info input{
+        height: 100%;
+        width: 90%;
+        margin: 0px 0 10px 0;
+    }
+
+    .formulario .info textarea{
+        height: 100%;
+        margin: 0px 0 10px 0;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1250px){
+    .carousel .menu-bar{
+        width: 370px;
+        padding: 0px 0px 0 0 !important;
+    }
+
+    .carousel .menu-bar img{
+        margin: 0px;
+    }
+
+    .carousel .menu-bar div{
+        margin: 30px 0px 0 0!important;
+    }
+
+    .fixed-menu-bar{
+        position: fixed !important;
+        height: 220px;
+    }
+
+    .carousel .menu-bar .dropdown-menu .materials{
+        margin-top: -80px !important;
+    }
+
+    .carousel .carousel-indicators{
+        margin: 0 !important;
+        margin-bottom: 50px !important;
+        width: 100%;
+        align-items: flex-end;
+    }
+    .carousel .carousel-indicators li{
+    }
+
+    .carousel .carousel-item .carousel-caption{
+        width: 100% !important;
+        margin: 0 !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 50px !important;
+        padding-right: 10px !important;;
+    }
+
+    .carousel .carousel-item .carousel-caption h1{
+        margin-left: 10px;
+        margin-bottom: 7px !important;
+    }
+
+    .page .company .text{
+        margin-top: 30px;
+    }
+
+    .page .company .text p{
+        margin-bottom: 40px;
+    }
+
+    .page .company .information{
+        margin-top: 65px !important;
+    }
+
+    .page .company .information .images img{
+        padding: 0px 10px 15px 10px;
+    }
+
+    .company .images{
+        padding-top: 80px !important;
+    }
+
+    .colors{
+        margin-bottom: 60px !important;
+    }
+
+    .colors .painel img:nth-child(1){
+        height: 400px !important;
+    }
+
+    .page .colors .colors-selector .row{
+        width: 70% !important;
+    }
+
+    .page .colors .colors-selector .row .painelcor{
+        cursor: pointer;
+        padding: 0px !important;
+        margin: 0 10px;
+    }
+
+    .page .colors .colors-selector .row .painelcor img{
+        width:  !important;
+    }
+
+    .page .colors .colors-selector .row .painelcor p{
+        margin-top: 10px;
+        font-size: 1.0rem;
+    }
+
+    .page .materials{
+        margin-bottom: 60px !important;
+    }
+
+    .page .quartzcollection .row,
+    #video{
+        width: 80%;
+        margin: 0 auto !important;
+        margin-bottom: 60px !important;
+        height: 410px;
+        text-align: right;
+    }
+
+    .page .quartzcollection .row img,
+    #video img{
+        height: 370px;
+    }
+
+    .inspirations{
+        margin-bottom: 80px !important;
+    }
+
+    .formulario .info {
+        top: 5%;
+        left: 5%;
+    }
+
+    .formulario .info h2{
+        font-family: montBlack;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+
+    .formulario .info input{
+        margin-top: 0 !important;
+        margin-bottom: 5px;
+        height: 90%;
+    }
+
+    .formulario .info textarea{
+        margin-bottom: 5px;
+        margin-top: 0 !important;
+        height: 90%;
+    }
+
+    .formulario button{
+        padding: 2.5px 30px;
+    }
+
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1250px){
+    .carousel .menu-bar{
+        width: 370px;
+    }
+
+    .carousel .menu-bar img{
+        margin-top: 0px !important;
+        margin: 0px;
+    }
+
+    .carousel .menu-bar div{
+        margin: 40px 0px 0 0!important;
+    }
+
+    .fixed-menu-bar{
+        position: fixed !important;
+        height: 240px;
+    }
+
+    .fixed-menu-bar{
+        margin-top: 0px !important;
+    }
+
+    .carousel .menu-bar .dropdown-menu .materials{
+        margin-top: -65px !important;
+    }
+
+    .formulario .info input{
+        margin-bottom: 10px;
+        height: 100%;
+    }
+
+    .formulario .info textarea{
+        margin-bottom: 10px;
+        height: 100%;
+    }
+
+    .formulario button{
+        padding: 5px 30px;
+    }
+}
