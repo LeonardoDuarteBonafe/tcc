@@ -593,6 +593,7 @@ h5{
     display: flex;
     align-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .formulario .whatsapp-logo img{

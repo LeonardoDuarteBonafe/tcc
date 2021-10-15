@@ -241,6 +241,10 @@ window.addEventListener("DOMContentLoaded", function () {
     
     AOS.init();
     
+    $('.whatsapp-logo').click(function(){
+       window.open('https://api.whatsapp.com/send?phone=5528999877349&text=Ol%C3%A1%2C+tenho+interesse+no+seu+produto!', '_blank');
+    });
+    
     $('.painelcor').click(function(){
        materialColor = $(this).attr('id');
         localStorage.setItem("materialColor", materialColor);
